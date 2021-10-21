@@ -1,0 +1,250 @@
+@import '../includes/var';
+
+body #sommaire {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0!important;
+    padding: 1%;
+    flex-wrap: wrap;
+    height: auto;
+
+    
+    list-style-type: none;
+
+    background-color: lighten($color: $color-main, $amount: 15) !important;
+    color: $color-second!important;
+    text-shadow: black 0px 0px 10px;
+    overflow: hidden;
+
+
+}
+
+
+body #sommaire > td {
+    width: 50%!important;
+    max-width: 50%!important;
+    min-width: 30%!important;
+    background-color: lighten($color: $color-main, $amount: 15) !important;
+    color: $color-second!important;
+    
+    
+
+}
+body #sommaire > th {
+    width: 50%!important;
+    max-width: 50%!important;
+    min-width: 30%!important;
+    background-color: lighten($color: $color-main, $amount: 15) !important;
+    color: $color-second!important;
+    
+
+}
+body #sommaire > tr {
+    width: 50%!important;
+    max-width: 50%!important;
+    min-width: 30%!important;
+    background-color: lighten($color: $color-main, $amount: 15) !important;
+    color: $color-second!important;
+    
+
+}
+body #sommaire > thead {
+    width: 50%!important;
+    max-width: 50%!important;
+    min-width: 30%!important;
+    background-color: lighten($color: $color-main, $amount: 15) !important;
+    color: $color-second!important;
+    
+
+}
+body #sommaire > tbody {
+    width: 50%!important;
+    max-width: 50%!important;
+    min-width: 30%!important;
+    background-color: lighten($color: $color-main, $amount: 15) !important;
+    color: $color-second!important;
+    
+
+}
+body #sommaire > table {
+    width: 50%!important;
+    max-width: 50%!important;
+    min-width: 30%!important;
+    background-color: lighten($color: $color-main, $amount: 15) !important;
+    color: $color-second!important;
+    
+
+}
+body #sommaire > img {
+    width: 50%!important;
+    max-width: 50%!important;
+    min-width: 30%!important;
+    background-color: lighten($color: $color-main, $amount: 15) !important;
+    color: $color-second!important;
+    
+
+}
+body #sommaire > span {
+    width: 50%!important;
+    max-width: 50%!important;
+    min-width: 30%!important;
+    background-color: lighten($color: $color-main, $amount: 15) !important;
+    color: $color-second!important;
+    
+
+}
+body #sommaire > p {
+    width: 50%!important;
+    max-width: 50%!important;
+    min-width: 30%!important;
+    background-color: lighten($color: $color-main, $amount: 15) !important;
+    color: $color-second!important;    
+
+}
+body #sommaire > div {
+    width: 50%!important;
+    max-width: 50%!important;
+    min-width: 30%!important;
+    background-color: lighten($color: $color-main, $amount: 15) !important;
+    color: $color-second!important;
+    
+}
+body #sommaire > aside {
+    width: 50%!important;
+    max-width: 50%!important;
+    min-width: 30%!important;
+    background-color: lighten($color: $color-main, $amount: 15) !important;
+    color: $color-second!important;
+    
+}body #sommaire > section {
+    width: 50%!important;
+    max-width: 50%!important;
+    min-width: 30%!important;
+    background-color: lighten($color: $color-main, $amount: 15) !important;
+    color: $color-second!important; 
+}
+
+
+
+
+body #sommaire a {
+    margin: 5% 2%;
+
+}
+body #sommaire h1, body #sommaire h2,body #sommaire h3, body #sommaire h4, body #sommaire h5, body #sommaire h6 {
+    font-size: 1.25rem;
+    line-height: 1.4;
+}
+
+
+
+@media all and (max-width: 1000px) {
+
+    body #sommaire > td {
+        width: 100%!important;
+        max-width: 100%!important;
+        min-width: 80%!important;
+        background-color: lighten($color: $color-main, $amount: 15) !important;
+        color: $color-second!important;
+        
+        
+    
+    }
+    body #sommaire > th {
+        width: 100%!important;
+        max-width: 100%!important;
+        min-width: 80%!important;
+        background-color: lighten($color: $color-main, $amount: 15) !important;
+        color: $color-second!important;
+        
+    
+    }
+    body #sommaire > tr {
+        width: 100%!important;
+        max-width: 100%!important;
+        min-width: 80%!important;
+        background-color: lighten($color: $color-main, $amount: 15) !important;
+        color: $color-second!important;
+        
+    
+    }
+    body #sommaire > thead {
+        width: 100%!important;
+        max-width: 100%!important;
+        min-width: 80%!important;
+        background-color: lighten($color: $color-main, $amount: 15) !important;
+        color: $color-second!important;
+        
+    
+    }
+    body #sommaire > tbody {
+        width: 100%!important;
+        max-width: 100%!important;
+        min-width: 80%!important;
+        background-color: lighten($color: $color-main, $amount: 15) !important;
+        color: $color-second!important;
+        
+    
+    }
+    body #sommaire > table {
+        width: 100%!important;
+        max-width: 100%!important;
+        min-width: 80%!important;
+        background-color: lighten($color: $color-main, $amount: 15) !important;
+        color: $color-second!important;
+        
+    
+    }
+    body #sommaire > img {
+        width: 100%!important;
+        max-width: 100%!important;
+        min-width: 80%!important;
+        background-color: lighten($color: $color-main, $amount: 15) !important;
+        color: $color-second!important;
+        
+    
+    }
+    body #sommaire > span {
+        width: 100%!important;
+        max-width: 100%!important;
+        min-width: 80%!important;
+        background-color: lighten($color: $color-main, $amount: 15) !important;
+        color: $color-second!important;
+        
+    
+    }
+    body #sommaire > p {
+        width: 100%!important;
+        max-width: 100%!important;
+        min-width: 80%!important;
+        background-color: lighten($color: $color-main, $amount: 15) !important;
+        color: $color-second!important;    
+    
+    }
+    body #sommaire > div {
+        width: 100%!important;
+        max-width: 100%!important;
+        min-width: 80%!important;
+        background-color: lighten($color: $color-main, $amount: 15) !important;
+        color: $color-second!important;
+        
+    }
+    body #sommaire > aside {
+        width: 100%!important;
+        max-width: 100%!important;
+        min-width: 80%!important;
+        background-color: lighten($color: $color-main, $amount: 15) !important;
+        color: $color-second!important;
+        
+    }body #sommaire > section {
+        width: 100%!important;
+        max-width: 100%!important;
+        min-width: 80%!important;
+        background-color: lighten($color: $color-main, $amount: 15) !important;
+        color: $color-second!important; 
+    }
+
+    
+}

@@ -1,0 +1,253 @@
+@import '../includes/var';
+
+#contact-head {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+
+    width: 100%;
+    padding: 50px 0 150px 0;
+    border-top: solid 1px $color-second;
+    border-bottom: solid 1px $color-second;
+    background-color: darken($color: $color-main, $amount: 20);
+}
+#contact-head section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;    
+}
+#contact-head section h1 {
+    margin-bottom: 10%;
+
+}
+#contact-head div img {
+    box-shadow: 3px 3px 10px $color-second;
+    max-height: 200px;
+    width: auto;
+}
+#contact-bloc {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#contact-bloc section {
+    min-width: 280px;
+    max-width: 350px;
+    width: 25%;
+    border: solid 5px $color-third;
+    border-radius: 5%;
+    box-sizing: border-box;
+    background-color: lighten($color: $color-main, $amount: 35);
+    display: grid;
+    grid-template: auto auto auto auto 40px / 100%;
+    position: relative;
+    top: -110px;
+    color: $color-third;
+    text-shadow: 0px 1px 1px #000;
+    overflow: hidden;
+}
+#contact-bloc section h4 {
+    color: #000;
+    font-weight: bold;
+    text-decoration: underline;
+    justify-self: center;
+    padding: 20px 0;
+}
+#contact-bloc section p {
+    align-self: center;
+    font-weight: bold;
+}
+#contact-bloc section div {
+    border-top: solid #000 1px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    grid-row: -1 / -2;
+}
+
+#contact-bloc section div a {
+    width: 100%;
+    text-decoration: none;
+    transition: transform 400ms;
+    color: #000;
+    &:hover {
+        text-decoration: underline;
+        color: $color-third;
+    }
+}
+#send-message {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: darken($color: $color-main, $amount: 20);
+}
+#send-message h3 {
+    width: 90%;
+    margin-right: 10%;
+}
+#send-message > p {
+    width: 90%;
+    margin-right: 10%;
+}
+#send-message form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 50%;
+    line-height: 0.8em;
+    font-size: 0.8em;
+    margin-top: 50px;
+    padding: 20px;
+    transform: scale(1.2);
+}
+#send-message form div {
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+#send-message form label {
+    width: 100%;
+    text-align: left;
+}
+#send-message form input {
+    width: 80%;
+    line-height: 1.3rem;
+}
+#send-message form textarea {
+    width: 100%;
+}
+
+#send-message form div:nth-child(3) {
+    margin-right: 10%;
+    width: 90%;
+}
+#send-message form button {
+    margin-right: 10%;
+}
+
+#contact-place {
+    margin: 0;
+    padding: 80px 0;
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#contact-address {
+    width: 40%;
+
+    text-align: center;
+    font-size: 1.3em;
+    line-height: 1.8em;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#contact-address .fa, #contact-address .fab {
+    margin: 10px;
+    font-size: 2rem;
+}
+
+#contact-map {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+#contact-map iframe {
+    width: 50%;
+    min-width: 400px;
+    min-height: 300px;
+    border:0;
+
+}
+
+@media all and (max-width: 1000px) {
+
+    #contact-head div {
+        display: none;
+    }
+    #contact-head section {
+        text-align: center;
+        align-self: center;
+    }
+    #contact-bloc {
+        flex-direction: column;
+    }
+    #contact-bloc section {
+        width: 70%;
+        max-width: 380px;
+        box-shadow: unset;
+        border: solid 1px #000;
+        background-color: #fff;
+        color: #000;
+        padding: 0;
+        margin: 15px auto;
+        grid-template-columns: 70% 30%;
+    }
+    #contact-bloc section h4, #contact-bloc section p {
+        grid-column: 1 / 2;
+    }
+    #contact-bloc section div {
+        grid-row: 1 / 50;
+        grid-column: -1 / -2;
+        padding: 0;
+        margin: 0;
+        border-left: solid 1px #000;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #contact-bloc section div a {
+        &:hover {
+            transition: unset;
+            transform: unset;
+            color: unset;
+        }
+    }
+}
+
+@media all and (max-width: 750px) {
+
+    #contact-bloc section {
+        margin: 15px auto;
+    }
+    #contact-bloc section div a {
+        font-size: 1.7em;
+    }
+    #contact-place {
+        flex-direction: column;
+    }
+    #contact-address {
+        width: 100%;
+        margin: auto;
+    }
+    #contact-map {
+        width: 100%;
+        margin: auto;
+        margin-top: 70px;
+    }
+}
+
+@media all and (max-width: 450px) {
+
+    #contact-bloc section p {
+        font-size: 0.8em;
+    }
+    #contact-place #contact-map iframe {
+        min-width: unset;
+        width: 90%;
+    }
+}

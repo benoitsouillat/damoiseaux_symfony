@@ -1,0 +1,236 @@
+@import './var';
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+    background-image: url("/fer.jpg"); 
+    background-repeat: no-repeat;
+    background-size: 100% ;
+
+}
+header #top-head {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 250px;
+}
+
+header #menu {
+    width: 100%;
+    background-color: darken($color: $color-main, $amount: 10);
+}
+header #menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+header #menu ul li:first-child {
+    padding-left: 0;
+}
+header #menu ul li {
+    padding: 20px 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    transition: transform 400ms, color 200ms;
+    transition-delay: 0 0;
+    transition-timing-function: ease-in;
+    &:hover {
+        transform: scale(1.2) translateY(-4px);
+        color: $color-detail;
+    }
+}
+header #menu ul li a {
+    padding: 20px 10px;
+    text-shadow: 0 1px 1px $color-print;
+    transition: transform 400ms, color 0;
+    transition-delay: 0 0;
+    transition-timing-function: ease-in;
+    &:hover {
+        border-bottom: solid 2px $color-detail;
+        transform: scale(1.2) translateY(-4px);
+    }
+}
+header #monelevage {
+    text-align: center;
+    width: 40%;
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5%;
+}
+header #monelevage h1 {
+    font-size: 1.8em;
+    line-height: 50px;
+}
+header #monelevage h2 {
+    font-size: 1.5em;
+    line-height: 50px;
+
+}
+header #monelevage h4 {
+    font-size: 0.8em;
+    text-shadow: 0 0 1px $color-print;
+}
+
+header #carouss {
+    max-height: 250px;
+    height: 250px;
+    max-width: 55%;
+    width: 330px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    object-fit: cover;
+    margin-right: auto;
+    margin-left: auto;
+}
+header #carouss .carousel-inner {
+    box-shadow: lighten($color: $color-second, $amount: 10) 5px 5px 15px;
+
+}
+header #carouss img {
+    object-fit: cover;
+    height: 220px;
+    width: auto;
+}
+header #ico-responsive {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header #logo {
+    display: none;
+}
+header #logo img {
+    height: 120px;
+}
+
+header #button-nav {
+    padding: 30px;
+    display: none;
+}
+header #button-nav button {
+    width: 85px;
+}
+header #button-close {
+    padding: 30px;
+    display: none;
+}
+header #button-close button {
+    width: 85px;
+}
+
+@media all and (max-width:1200px) {
+    header {
+        background-image: none;
+        background: linear-gradient(.25turn, #3a77b0, #2c556d);
+    }
+    header #menu ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    header #menu ul li a{
+        &:hover {
+            border-bottom: 0;
+        }
+    }
+}
+
+
+@media all and (max-width:820px) {
+    header #monelevage {
+        width: 80%;
+        max-width: 80%;
+    }
+    header #carouss {
+        display: none;
+    }
+    header #menu {
+        display: none;
+        width: 70%;
+        position: relative;
+        left: 15%;
+        border-top-left-radius: 5%;
+        border-bottom-right-radius: 5%;
+        background: linear-gradient(0.35turn,darken($color: $color-main, $amount: 20), darken($color: $color-main, $amount: 10));
+
+        margin-bottom: 10px;
+    }
+    header #menu ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header #menu ul li:first-child {
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    header #menu ul li {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        &:hover {
+            transform: scale(1.1) translateY(-3px);
+        }
+    }
+    header #menu ul li a{
+        padding: 5px 10px;
+        &:hover {
+            border-bottom: 0;
+            transform: scale(1.1) translateY(-3px);
+
+        }
+    }
+    header #logo {
+        display: block;
+    }
+    header #button-nav {
+        display: block;
+    }
+
+}
+@media all and (max-width: 600px) {
+    header #monelevage h1 {
+        font-size: 1.4em;
+        line-height: 40px;
+    }
+    header #monelevage h2 {
+        font-size: 1em;
+        line-height: 30px;
+    
+    }
+    header #monelevage h4 {
+        font-size: 0.8em;
+        text-shadow: 0 0 1px $color-print;
+    }
+
+}
+
+@media all and (max-width:400px) {
+    header #monelevage h1 {
+        font-size: 1.2em;
+        line-height: 30px;
+    }
+    header #monelevage h2 {
+        font-size: 0.8em;
+        line-height: 30px;
+    
+    }
+    header #monelevage h4 {
+        font-size: 0.7em;
+        text-shadow: 0 0 1px $color-print;
+    }
+    
+
+}

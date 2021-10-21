@@ -1,0 +1,71 @@
+@import '../includes/var';
+
+main .section-boutique {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    text-align: center;
+}
+main .section-boutique h2 {
+    margin-top: 30px;
+    width: 100%;
+}
+
+main .section-boutique .fig-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    width: 98%;
+
+}
+main .section-boutique a {
+    min-width: 240px;
+    max-width: 350px;
+    height: 220px;
+    width: 25%;
+    margin: 0 20px 30px 20px;
+
+    border: solid 2px $color-second;
+    border-radius: 5%;
+    overflow: hidden;
+    transition: transform 300ms;
+    transition-delay: 0 0;
+    transition-timing-function: ease-in-out;
+    &:hover {
+        transform: scale(1.05) translateY(-3px);
+        border: solid 6px $color-third;
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+}
+
+main .section-boutique img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+main .section-boutique figcaption {
+    background-color: $color-second;
+    color: $color-main;
+    position: relative;
+    bottom: 0;
+    height: calc(100% - 150px);
+}
+main .section-boutique figcaption h4 {
+    padding-top: 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+main .section-boutique a:hover figcaption {
+    background-color: $color-third;
+    color: #FFF;
+}

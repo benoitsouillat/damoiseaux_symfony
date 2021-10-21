@@ -1,0 +1,230 @@
+@import "../includes/var";
+
+#ourdog {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    width: 100%;
+    text-align: center;
+    line-height: 0.8em;
+}
+
+#ourdog > section {
+    margin: auto;
+    min-width: 95%;
+    max-width: 98%;
+    padding-top: 0;
+}
+#ourdog h2 {
+    width: 100%;
+    margin-bottom: 25px;
+    text-align: center;
+    margin-top: 30px;
+
+}
+#ourdog h3 {
+    margin-bottom: 50px;
+}
+#ourdog h4 {
+    padding: 20px 0;
+    margin-bottom: 50px;
+}
+
+#ourdog > section > section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#ourdog  section .vignet-dog {
+    min-width: 242px;
+    max-width: 350px;
+    transform: none;
+}
+#ourdog figure {
+
+    border: 2px solid $color-second;
+    box-shadow: 2px 2px 2px $color-second;
+    box-sizing: border-box;
+    border-radius: 5%;
+
+    min-width: 242px;
+    max-width: 350px;
+    max-height: 250px;
+    margin: 0 20px;
+    margin-bottom: 25px;
+}
+#ourdog a:hover figure{
+    border: 5px solid $color-third;
+    box-sizing: border-box;
+    background-color: $color-third;
+}
+
+#ourdog figcaption {
+    padding-top: 15px;
+    height: 50px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+
+}
+#ourdog figcaption h6 {
+    font-weight: bold;
+
+}
+#ourdog a:hover figcaption {
+    background-color: $color-third;
+    color: #FFF;
+    font-weight: bold;
+    text-decoration: underline;
+    box-sizing: border-box;
+}
+#ourdog figure img {
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%;
+    max-height: 170px;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+#ourdog #dog-card {
+    width: 100%;
+    max-width: 100%;
+
+    border: $color-second 5px solid;
+    border-radius: 1%;
+    box-shadow: 2px 2px 5px $color-second;
+    margin: 50px;
+    padding: 30px;
+}
+#dog-card > div {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#dog-card .fa.fa-angellist {
+    font-weight: bold;
+    font-weight: 900;
+}
+
+#dog-card img {
+    max-width: 35%;
+    box-shadow: $color-second 5px 5px 10px;
+}
+#dog-card #next-dog {
+    align-self: flex-end;
+    justify-self: flex-end;
+    position: relative;
+    bottom: -10%;
+    right: -10%;
+}
+#dog-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+#dog-info a {
+    margin-bottom: 20px;
+}
+#repro-page .fancybox-inner {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#repro-page .fancybox-image {
+    width: 100%;
+    object-fit: contain;
+    align-self: center;
+}
+
+
+
+#repro-page nav {
+    width: 90%;
+    margin: auto;
+}
+
+#ourdog .card-hidden {
+    display: none;
+}
+#ourdog .card-visible {
+    display: visible;
+}
+.hidden {
+    display: none;
+}
+
+@media all and (max-width: 990px) {
+    #ourdog > section > div {
+        flex-wrap: wrap;
+    }
+    #ourdog div > a {
+        max-width: 250px;
+        margin-top: 25px;
+    }
+    #repro-page nav {
+        width: 100%;
+    }
+
+}
+
+@media all and (min-width: 680px) and (max-width : 750px) {
+
+    #ourdog > section {
+        min-width: 45%;
+        max-width: 45%;
+    }
+    #ourdog h3 {
+        width: 200%;
+    }
+
+    #ourdog > section > div {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    #ourdog #dog-card {
+        max-width: 49%;
+        margin: 0;
+        margin-right: 25px;
+        padding: 30px;
+    }
+    #ourdog #dog-card img {
+        max-width: 100%;
+    }
+
+
+}
+
+@media all and (max-width: 679px) {
+
+
+    #ourdog section:first-child {
+        order: 3;
+    }
+
+    #ourdog > section {
+        min-width: 95%;
+        max-width: 95%;
+        margin: auto;
+    }
+    #ourdog > section {
+        flex-direction: column;
+    }
+    #ourdog div > a {
+        max-width: 350px;
+        margin-top: 25px;
+    }
+    #ourdog #dog-card img {
+        max-width: 100%;
+    }
+
+}

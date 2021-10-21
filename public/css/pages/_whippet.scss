@@ -1,0 +1,96 @@
+@import '../includes/var';
+
+#le-whippet {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin: auto;
+}
+
+#le-whippet h2, h4 {
+    width: 100%;
+    text-align: center;
+}
+#conseil-whippet {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    width: 100%;
+    text-align: center;
+}
+#conseil-whippet p {
+    text-align: justify;
+}
+
+#conseil-whippet ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    line-height: 3rem;
+    padding-left: 0;
+}
+#conseil-whippet ul li {
+    transition: transform 500ms;
+    transition-delay: 0 0;
+    transition-timing-function: ease-in;
+    padding-bottom: 5px;
+
+    &:hover {
+        transform: translateY(2px) rotate(0.01turn);
+    }
+}
+#conseil-whippet a {
+    padding: 10px 20px;
+    font-weight: bold;
+    border: solid 2px $color-second;
+    border-radius: 3%;
+    &:hover {
+        border: solid 2px $color-hover;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+}
+
+@media all and (max-width: 1280px) {
+    #conseil-whippet ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+                                /*     -------  Page Choix du Sexe   -------     */
+
+/**/
+
+
+.para-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.para-flex .btn {
+    align-self: flex-end;
+    margin-right: 10%;
+}
+
+.para-flex h6 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    box-sizing: unset;
+}
+.para-flex .important {
+    margin: 30px 0;
+    font-size: 1.1em;
+    line-height: 1.1em;
+    padding: 0 10%;
+}

@@ -1,0 +1,17 @@
+@import "includes/var";
+@import "includes/general";
+@import "includes/btn";
+@import "includes/header";
+@import "includes/footer";
+@import "includes/bases";
+@import "includes/mail";
+
+/* Importation Identifiant par page */
+
+@import "pages/index.scss";
+@import "pages/sommaire.scss";
+@import "pages/mariages.scss";
+@import "pages/whippet.scss";
+@import "pages/boutique.scss";
+@import "pages/repro.scss";
+@import "pages/contact.scss";

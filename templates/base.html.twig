@@ -2,11 +2,13 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" >
         <title>{% block title %}Welcome!{% endblock %}</title>
         {# Run `composer require symfony/webpack-encore-bundle`
            and uncomment the following Encore helpers to start using Symfony UX #}
         {% block stylesheets %}
             {#{{ encore_entry_link_tags('app') }}#}
+            <link rel="stylesheet" href={{ asset("/css/main.css")}} type="text/css" media="all" />
         {% endblock %}
 
         {% block javascripts %}
@@ -14,6 +16,39 @@
         {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+    <header>
+        <nav id="menu">
+            <ul>
+                <li><a href={{ path('index')}} >Accueil</a></li>
+                <li><a href="/contenu/sommaire.php">Sommaire</a></li>
+                <li><a href="/contenu/nos-repro.php">Nos reproducteurs</a></li>
+                <li><a href="/contenu/nos-bébés.php">Nos chiots disponibles</a></li>
+                <li><a href="/contenu/boutique.php">Nos accessoires</a></li>
+                <li><a href="/contenu/whippet.php">Le Whippet</a></li>
+                <li><a href="/contenu/contact.php">Nous contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+        {% block body %}
+        
+        {% endblock %}
+
+        <footer>
+            <div id="damoiseaux-footer">
+                <p>&copy; 2002-2021 www.lewhippet.com, La Romance des Damoiseaux -- Textes, Photos et Vidéos tous droits réservés pour tous pays  </p>
+                <br/>
+                <p>
+                    Sabine Bourget, diplomée de l'Ecole Nationale du chien
+                </p>
+                <p>
+                    N°Eleveur : 030488 / 51 229 - N° MSA : 190 984 700 322 - N° SIRET : 391 602 406 00020 (53)
+                </p>
+                <p>Elevage de Whippet déclaré aux services vétérinaires et à la préfecture de Corrèze sous le N°20050219</p>
+                <br/>
+            </div>
+            <div id="developer"><p>Site structure et hébergement : Benoit Souillat </p></div>
+        </footer>
+
     </body>
+
 </html>

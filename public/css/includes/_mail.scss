@@ -1,0 +1,11 @@
+@import './var';
+
+#page-mail {
+    text-align: center;
+    background-color: $color-main;
+}
+#page-mail .btn-mail {
+    text-align: center;
+    padding: 10%;
+    margin: 10%;
+}
