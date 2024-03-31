@@ -1,0 +1,1 @@
+This application must replace lewhippet.com with a symfony project stronger than PHP Vanilla which i used before.

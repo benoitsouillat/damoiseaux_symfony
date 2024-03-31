@@ -1,0 +1,47 @@
+version: "3.8"
+services:
+  # Mysql database container
+  db:
+    image: mysql
+    container_name: db_damoiseaux
+    restart: always
+    volumes:
+      - db-data:/var/lib/mysql
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+    networks:
+      - symfony
+
+  # phpmyadmin container
+  phpmyadmin:
+    image: phpmyadmin
+    container_name: damoiseaux_phpmyadmin
+    restart: always
+    depends_on:
+      - db
+    ports:
+      - 8880:80
+    environment:
+      PMA_HOST: db
+    networks:
+      - symfony
+
+  # Symfony apache project container
+  www:
+    build: docker/php
+    container_name: damoiseaux_symfony
+    ports:
+      - "8899:80"
+    volumes:
+      - ./docker/php/vhosts:/etc/apache2/sites-enabled
+      - ./app:/var/www/app
+    restart: always
+    networks:
+      - symfony
+
+networks:
+  symfony:
+
+
+volumes:
+  db-data:
