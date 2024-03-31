@@ -1,0 +1,11 @@
+<nav class="menu">
+    <a href="{{ path('index') }}" class="menu_link" title="Accueil du site">
+        <span>lewhippet.com</span>
+    </a>
+    <div class="nav-link">
+        <a class="menu_link {{ app.current_route == 'index' ? 'active' : '' }}" href="{{ path('index') }}"
+            title="Accueil de l'élevage whippet La Romance des Damoiseaux">Accueil</a>
+        <a class="menu_link" href="{{ path('sommaire')}}">Sommaire</a>
+        <a class="menu_link" href="{{ path('contact') }}">Contact</a>
+    </div>
+</nav>
